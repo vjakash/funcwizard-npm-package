@@ -161,3 +161,8 @@ let size = (inp) => {
     }
     // console.log("***********(11.Size)********************");
 module.exports.size = size;
+
+let deepcopy = (inp) => {
+    return JSON.parse(JSON.stringify(inp));
+}
+module.exports.deepcopy = deepcopy;
