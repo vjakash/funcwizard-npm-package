@@ -1,7 +1,7 @@
 # What is this
 This package provide functions to simplify development process
 
-#Installation#
+# Installation
 
 `npm i funcwizard`
 
@@ -56,8 +56,8 @@ let result =funcwizard.last([1, 2, 3,4]) //result will be 4
 #### nth
 Returns the element in the given position
 ##### options
-*positive position-returns from the start
-*negatice position-returns from the end
+* positive position-returns from the start
+* negatice position-returns from the end
 ```
 let array = ['a', 'b', 'c', 'd'];
 let result =funcwizard.nth(array, 1) //result will be 'b'
