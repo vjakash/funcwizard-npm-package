@@ -12,13 +12,14 @@ This package provide functions to simplify development process
 # Available Functions
 
 #### concat 
+Concatinates all given array and return it.
 ``` 
 let arr=[4]
 let result =funcwizard.concat([1,2,3],arr,[5])//result will be [1,2,3,4,5]
 ```
 
 #### chunk
-
+Divides the array into blocks of given number and return it.
 ``` 
 let result =funcwizard.chunk(['a', 'b', 'c', 'd'], 3)//result will be [["a", "b", "c"], ["d"]]
 let result =funcwizard.chunk(['a', 'b', 'c', 'd'], 2)//result will be [["a", "b"], ["c", "d"]]
@@ -97,4 +98,34 @@ let result=funcwizard.size('pebbles'); //result will be 7
 Copy an object by value for nested objects and not by reference with this function
 ```
 let result=funcwizard.deepcopy({ 'a': 1, 'b': {'c':2} }); //result contained copy of the object without same reference.
+```
+
+#### dropright
+Removes the given number of elements from the end of the array
+Default value to remove is 1
+```
+let result=funcwizard.dropright([1,2,3,4]); //result will be [1,2,3]
+let result=funcwizard.dropright([1,2,3,4],0); //result will be [1,2,3,4]
+let result=funcwizard.dropright([1,2,3,4],2); //result will be [1,2]
+let result=funcwizard.dropright([1,2,3,4],5); //result will be []
+```
+#### dropleft
+Removes the given number of elements from the start of the array
+Default value to remove is 1
+
+```
+let result=funcwizard.dropright([1,2,3,4]); //result will be [2,3,4]
+let result=funcwizard.dropright([1,2,3,4],0); //result will be [1,2,3,4]
+let result=funcwizard.dropright([1,2,3,4],2); //result will be [3,4]
+let result=funcwizard.dropright([1,2,3,4],5); //result will be []
+```
+#### dropboth
+Removes the given number of elements from both starting and ending of the array.
+Default value to remove is 1
+
+```
+let result=funcwizard.dropboth([1,2,3,4,5,6]); //result will be [2,3,4,5]
+let result=funcwizard.dropboth([1,2,3,4,5,6],0); //result will be [ 1, 2, 3, 4, 5, 6 ]
+let result=funcwizard.dropboth([1,2,3,4,5,6],2); //result will be [3,4]
+let result=funcwizard.dropboth([1,2,3,4,5,6],5); //result will be []
 ```

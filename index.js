@@ -1,6 +1,10 @@
 //ConCat
-let concat = (a, b, c) => {
-    let result = [...a, ...b, ...c];
+let concat = (...args) => {
+    let result = [];
+    for (let i of args) {
+        result.push(...i);
+    }
+    // let result = [...a, ...b, ...c];
     return result;
 };
 // console.log("***********(1.ConCat)********************");
@@ -166,3 +170,34 @@ let deepcopy = (inp) => {
     return JSON.parse(JSON.stringify(inp));
 }
 module.exports.deepcopy = deepcopy;
+
+let dropright = (inp, num = 1) => {
+    let input = [...inp];
+    if (num >= input.length) {
+        return [];
+    }
+    input.splice(input.length - num, num);
+    return input;
+}
+module.exports.dropright = dropright;
+
+let dropleft = (inp, num = 1) => {
+    let input = [...inp];
+    if (num >= input.length) {
+        return [];
+    }
+    input.splice(0, num);
+    return input;
+}
+module.exports.dropleft = dropleft;
+
+let dropboth = (inp, num = 1) => {
+    let input = [...inp];
+    if (num * 2 >= input.length) {
+        return [];
+    }
+    input.splice(0, num);
+    input.splice(input.length - num, num);
+    return input;
+}
+module.exports.dropboth = dropboth;
