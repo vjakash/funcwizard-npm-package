@@ -26,7 +26,13 @@ let result =funcwizard.chunk(['a', 'b', 'c', 'd'], 2)//result will be [["a", "b"
 ```
 
 #### initial
-Gets all but the last element of array
+Gets all but the first element of array
+
+```
+let result =funcwizard.initial(['s','w', 'b', 'c', 'd','e'])//result will be ["w", "b", "c", "d", "e"]
+
+```
+#### indexof
 
 ```
 

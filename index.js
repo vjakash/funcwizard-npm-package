@@ -58,7 +58,7 @@ let indexof = (a, b, f = 0) => {
     return a.indexOf(b);
 };
 // console.log("***********(4.indexOF)********************");
-module.exports.concat = concat;
+module.exports.indexof = indexof;
 
 /*join
 _.join(['a', 'b', 'c'], '~');
@@ -75,7 +75,7 @@ let join = (a, b) => {
     return String(result);
 };
 // console.log("***********(5.join)********************");
-module.exports.concat = concat;
+module.exports.join = join;
 
 /*last
 _.last([1, 2, 3]);
@@ -84,7 +84,7 @@ let last = (arr) => {
     return arr[arr.length - 1];
 };
 // console.log("***********(6.last)********************");
-module.exports.concat = concat;
+module.exports.last = last;
 
 /*nth
 var array = ['a', 'b', 'c', 'd'];
@@ -100,7 +100,7 @@ let nth = (arr, ind) => {
     }
 };
 // console.log("***********(7.nth)********************");
-module.exports.concat = concat;
+module.exports.nth = nth;
 
 /*sum
 _.sum([4, 2, 8, 6]);
@@ -112,7 +112,7 @@ let sum = (arr) => {
     return result;
 };
 // console.log("***********(8.sum)********************");
-module.exports.concat = concat;
+module.exports.sum = sum;
 
 /*min
 _.min([4, 2, 8, 6]);
@@ -128,7 +128,7 @@ let min = (arr) => {
     }
     // console.log("***********(9.min)********************");
 
-module.exports.concat = concat;
+module.exports.min = min;
 
 /*max
 _.max([4, 2, 8, 6]);
@@ -143,7 +143,7 @@ let max = (arr) => {
         return result;
     }
     // console.log("***********(10.max)********************");
-module.exports.concat = concat;
+module.exports.max = max;
 
 /*size
 _.size([1, 2, 3]);
