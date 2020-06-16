@@ -1,6 +1,6 @@
 {
   "name": "funcwizard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "functions to make developer's work easier",
   "main": "index.js",
   "scripts": {
