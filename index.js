@@ -3,12 +3,12 @@ let concat = (a, b, c) => {
     let result = [...a, ...b, ...c];
     return result;
 };
-let arr = [1];
-let op = concat(arr, [3], [
-    [4]
-]);
-console.log("***********(1.ConCat)********************");
-console.log(op);
+// let arr = [1];
+// let op = concat(arr, [3], [
+//     [4]
+// ]);
+// console.log("***********(1.ConCat)********************");
+// console.log(op);
 module.exports.concat = concat;
 
 //Chunk
@@ -32,9 +32,9 @@ let chunk = (a, b) => {
     });
     return result;
 };
-let out = chunk(["a", "b", "c", "d"], 2);
-console.log("***********(2.Chunk)********************");
-console.log(out);
+// let out = chunk(["a", "b", "c", "d"], 2);
+// console.log("***********(2.Chunk)********************");
+// console.log(out);
 module.exports.chunk = chunk;
 
 //initial
@@ -46,9 +46,9 @@ let initial = (a) => {
     });
     return arr;
 };
-let output = initial([1, 2, 3]);
-console.log("***********(3.Initial)********************");
-console.log(output);
+// let output = initial([1, 2, 3]);
+// console.log("***********(3.Initial)********************");
+// console.log(output);
 module.exports.initial = initial;
 
 /*indexof
@@ -66,9 +66,9 @@ let indexof = (a, b, f = 0) => {
     }
     return a.indexOf(b);
 };
-let res = indexof([1, 2, 1, 2], 2, 2);
-console.log("***********(4.indexOF)********************");
-console.log(res);
+// let res = indexof([1, 2, 1, 2], 2, 2);
+// console.log("***********(4.indexOF)********************");
+// console.log(res);
 module.exports.concat = concat;
 
 /*join
@@ -85,9 +85,9 @@ let join = (a, b) => {
     }, "");
     return String(result);
 };
-let r1 = join(["a", "b", "c"], "~");
-console.log("***********(5.join)********************");
-console.log(r1);
+// let r1 = join(["a", "b", "c"], "~");
+// console.log("***********(5.join)********************");
+// console.log(r1);
 module.exports.concat = concat;
 
 /*last
@@ -96,9 +96,9 @@ _.last([1, 2, 3]);
 let last = (arr) => {
     return arr[arr.length - 1];
 };
-let r2 = last([1, 2, 3]);
-console.log("***********(6.last)********************");
-console.log(r2);
+// let r2 = last([1, 2, 3]);
+// console.log("***********(6.last)********************");
+// console.log(r2);
 module.exports.concat = concat;
 
 /*nth
@@ -114,12 +114,12 @@ let nth = (arr, ind) => {
         return arr[Number(ind)];
     }
 };
-let array = ["a", "b", "c", "d"];
-let r3 = nth(array, 1);
-console.log("***********(7.nth)********************");
-console.log(r3);
-r3 = nth(array, -2);
-console.log(r3);
+// let array = ["a", "b", "c", "d"];
+// let r3 = nth(array, 1);
+// console.log("***********(7.nth)********************");
+// console.log(r3);
+// r3 = nth(array, -2);
+// console.log(r3);
 module.exports.concat = concat;
 
 /*sum
@@ -131,9 +131,9 @@ let sum = (arr) => {
     });
     return result;
 };
-let r4 = sum([4, 2, 8, 6]);
-console.log("***********(8.sum)********************");
-console.log(r4);
+// let r4 = sum([4, 2, 8, 6]);
+// console.log("***********(8.sum)********************");
+// console.log(r4);
 module.exports.concat = concat;
 
 /*min
@@ -142,17 +142,17 @@ _.min([4, 2, 8, 6]);
 _.min([]);
 => undefined*/
 let min = (arr) => {
-    let result = arr.reduce((acc, item) => {
-        if (acc > item) { acc = item; }
-        return acc;
-    }, arr[0]);
-    return result;
-}
-let r5 = min([4, 2, 1, 8, 6]);
-console.log("***********(9.min)********************");
-console.log(r5);
-r5 = min([]);
-console.log(r5);
+        let result = arr.reduce((acc, item) => {
+            if (acc > item) { acc = item; }
+            return acc;
+        }, arr[0]);
+        return result;
+    }
+    // let r5 = min([4, 2, 1, 8, 6]);
+    // console.log("***********(9.min)********************");
+    // console.log(r5);
+    // r5 = min([]);
+    // console.log(r5);
 module.exports.concat = concat;
 
 /*max
@@ -161,17 +161,17 @@ _.max([4, 2, 8, 6]);
 _.max([]);
  => undefined*/
 let max = (arr) => {
-    let result = arr.reduce((acc, item) => {
-        if (acc < item) { acc = item; }
-        return acc;
-    }, arr[0]);
-    return result;
-}
-let r6 = max([4, 2, 8, 6]);
-console.log("***********(10.max)********************");
-console.log(r6);
-r6 = max([]);
-console.log(r6);
+        let result = arr.reduce((acc, item) => {
+            if (acc < item) { acc = item; }
+            return acc;
+        }, arr[0]);
+        return result;
+    }
+    // let r6 = max([4, 2, 8, 6]);
+    // console.log("***********(10.max)********************");
+    // console.log(r6);
+    // r6 = max([]);
+    // console.log(r6);
 module.exports.concat = concat;
 
 /*size
@@ -182,18 +182,18 @@ _.size({ 'a': 1, 'b': 2 });
 _.size('pebbles');
  => 7*/
 let size = (inp) => {
-    if (typeof(inp == "Object")) {
-        return Object.keys(Object(inp)).length;
-    } else {
-        return String(inp).length;
+        if (typeof(inp == "Object")) {
+            return Object.keys(Object(inp)).length;
+        } else {
+            return String(inp).length;
+        }
     }
-}
-let r7 = size([1, 2, 3]);
-console.log("***********(11.Size)********************");
-console.log(r7);
-r7 = size({ 'a': 1, 'b': 2 });
-console.log(r7);
-r7 = size('pebbles');
-console.log(r7);
+    // let r7 = size([1, 2, 3]);
+    // console.log("***********(11.Size)********************");
+    // console.log(r7);
+    // r7 = size({ 'a': 1, 'b': 2 });
+    // console.log(r7);
+    // r7 = size('pebbles');
+    // console.log(r7);
 
 module.exports.size = size;
