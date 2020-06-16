@@ -9,7 +9,7 @@ let op = concat(arr, [3], [
 ]);
 console.log("***********(1.ConCat)********************");
 console.log(op);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 //Chunk
 let chunk = (a, b) => {
@@ -35,7 +35,7 @@ let chunk = (a, b) => {
 let out = chunk(["a", "b", "c", "d"], 2);
 console.log("***********(2.Chunk)********************");
 console.log(out);
-modules.exports.chunk = chunk;
+module.exports.chunk = chunk;
 
 //initial
 let initial = (a) => {
@@ -49,7 +49,7 @@ let initial = (a) => {
 let output = initial([1, 2, 3]);
 console.log("***********(3.Initial)********************");
 console.log(output);
-modules.exports.initial = initial;
+module.exports.initial = initial;
 
 /*indexof
 _.indexOf([1, 2, 1, 2], 2);
@@ -69,7 +69,7 @@ let indexof = (a, b, f = 0) => {
 let res = indexof([1, 2, 1, 2], 2, 2);
 console.log("***********(4.indexOF)********************");
 console.log(res);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 /*join
 _.join(['a', 'b', 'c'], '~');
@@ -88,7 +88,7 @@ let join = (a, b) => {
 let r1 = join(["a", "b", "c"], "~");
 console.log("***********(5.join)********************");
 console.log(r1);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 /*last
 _.last([1, 2, 3]);
@@ -99,7 +99,7 @@ let last = (arr) => {
 let r2 = last([1, 2, 3]);
 console.log("***********(6.last)********************");
 console.log(r2);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 /*nth
 var array = ['a', 'b', 'c', 'd'];
@@ -120,7 +120,7 @@ console.log("***********(7.nth)********************");
 console.log(r3);
 r3 = nth(array, -2);
 console.log(r3);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 /*sum
 _.sum([4, 2, 8, 6]);
@@ -134,7 +134,7 @@ let sum = (arr) => {
 let r4 = sum([4, 2, 8, 6]);
 console.log("***********(8.sum)********************");
 console.log(r4);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 /*min
 _.min([4, 2, 8, 6]);
@@ -153,7 +153,7 @@ console.log("***********(9.min)********************");
 console.log(r5);
 r5 = min([]);
 console.log(r5);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 /*max
 _.max([4, 2, 8, 6]);
@@ -172,7 +172,7 @@ console.log("***********(10.max)********************");
 console.log(r6);
 r6 = max([]);
 console.log(r6);
-modules.exports.concat = concat;
+module.exports.concat = concat;
 
 /*size
 _.size([1, 2, 3]);
@@ -196,4 +196,4 @@ console.log(r7);
 r7 = size('pebbles');
 console.log(r7);
 
-modules.exports.size = size;
+module.exports.size = size;
